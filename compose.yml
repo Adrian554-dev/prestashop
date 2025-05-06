@@ -1,0 +1,61 @@
+services:
+  web:
+    build: ./apache
+    hostname: web
+    ports:
+      - '8000:80'
+      - '443:443'
+    volumes:
+      - ./prestashop:/app
+      - ./apache/prestashop.conf:/etc/apache2/sites-enabled/prestashop.conf
+      - ./certs:/.certs
+    env_file:
+      - .env
+    # environment:
+    #   MYSQL_ROOT_PASSWORD: abc123.
+    #   MYSQL_DATABASE: db
+    #   MYSQL_USER: user
+    #   MYSQL_PASSWORD: userpw123.
+    networks:
+      rede_test:
+        aliases:
+          - adrian.lan
+          - www.adrian.lan
+    depends_on:
+      - db1
+
+  db1:
+    image: mysql:latest
+    restart: always
+    env_file:
+      - .env
+    # environment:
+    #   MYSQL_ROOT_PASSWORD: abc123.
+    #   MYSQL_DATABASE: db
+    #   MYSQL_USER: user
+    #   MYSQL_PASSWORD: userpw123.
+    volumes:
+      - db1:/var/lib/mysql
+      - ./backup:/backup
+      # - ./backup/wp.sql:/docker-entrypoint-initdb.d/wp.sql
+    networks:
+      rede_test:
+
+  cliente:
+    hostname: cliente
+    image: brunosct/debian12-cliente-firefox
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ${HOME}/.Xauthority:/root/.Xauthority
+    networks:
+      rede_test:
+    depends_on:
+      - web
+
+volumes:
+  db1:
+
+networks:
+  rede_test:
