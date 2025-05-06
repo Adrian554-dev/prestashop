@@ -21,6 +21,7 @@ services:
         aliases:
           - adrian.lan
           - www.adrian.lan
+          - tech.a24adrianbr.tech
     depends_on:
       - db1
 
