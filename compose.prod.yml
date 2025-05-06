@@ -1,0 +1,19 @@
+services:
+  web:
+    build: ./apache
+    hostname: web
+    restart: allways
+    ports:
+      - '8000:80'
+      - '443:443'
+    volumes:
+      - ./prestashop:/app
+      - ./apache/prestashop.conf:/etc/apache2/sites-enabled/prestashop.conf
+      - ./certs:/.certs
+    env_file:
+      - .env
+    # environment:
+    #   MYSQL_ROOT_PASSWORD: abc123.
+    #   MYSQL_DATABASE: db
+    #   MYSQL_USER: user
+    #   MYSQL_PASSWORD: userpw123.

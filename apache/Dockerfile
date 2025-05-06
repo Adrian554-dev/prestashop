@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
 
 
 RUN a2enmod ssl rewrite
-
+RUN mkdir -p /app/var/logs
 RUN chmod a+w /app/var/logs
 
 EXPOSE 80 443
