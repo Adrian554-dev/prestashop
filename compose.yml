@@ -9,6 +9,8 @@ services:
       - ./prestashop:/app
       - ./apache/prestashop.conf:/etc/apache2/sites-enabled/prestashop.conf
       - ./certs:/.certs
+      - ./apache/entrypoint.sh:/entrypoint.sh
+      - ./logs:/logs
     env_file:
       - .env
     # environment:

@@ -24,5 +24,7 @@ RUN chmod a+w /app/var/logs
 
 EXPOSE 80 443
 
+COPY ./entrypoint.sh /entrypoint.sh
 
-CMD ["apachectl", "-D", "FOREGROUND"]
+#CMD ["apachectl", "-D", "FOREGROUND"]
+ENTRYPOINT ["bash", "/entrypoint.sh"]
