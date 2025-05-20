@@ -9,6 +9,7 @@ services:
     volumes:
       - ./prestashop:/app
       - ./apache/prestashop.conf:/etc/apache2/sites-enabled/prestashop.conf
+      - ./apache/entrypoint.sh:/entrypoint.sh
       - ./certs:/.certs
       - ./logs:/logs
     env_file:
