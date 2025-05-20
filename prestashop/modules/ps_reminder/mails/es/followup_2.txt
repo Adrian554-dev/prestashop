@@ -2,15 +2,15 @@
 
 {shop_url}
 
-Hi {firstname} {lastname},
+Hola {firstname} {lastname},
 
-Thanks for your order.
+Gracias por su pedido.
 
-We are pleased to offer you a discount of {amount}% off your next order. And this offer is valid for {days} days, so do not wait any longer!
+Nos complace ofrecerle un descuento de un {amount}% en su próximo pedido. Esta oferta es solamente válida durante {days} días, ¡así que no espere más!
 
-Here is your VOUCHER CODE: {voucher_num}
+Aquí está su CÓDIGO DE CUPÓN DE DESCUENTO: {voucher_num}
 
-Enter this code in your shopping cart to get the discount.
+Introduzca este código en su carrito de compra para obtener el descuento.
 
 [{shop_name}]({shop_url})
 

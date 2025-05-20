@@ -2,17 +2,17 @@
 
 {shop_url}
 
-{firstname_friend} {lastname_friend}, Join us!
+{firstname_friend} {lastname_friend}, ¡Únase!
 
-Your friend {firstname} {lastname} wants to refer you on [{shop_name}]({shop_url})!
+¡Su amigo {firstname} {lastname} quiere referirle en [{shop_name}]({shop_url})!
 
-We are pleased to offer you a voucher worth {discount} that you can use on your next order. Get referred and earn a discount voucher of {discount}!
+Nos complace ofrecerle un cupón de descuento valorado en {discount} para que lo utilice en su próximo pedido. ¡Afíliese y obtega un cupón de descuento de {discount}!
 
-[It's very easy to sign up, just click here!]({link})
+[Es muy fácil registrarse. ¡Solo haga clic aquí!]({link})
 
-When signing up, don't forget to provide the email address of your referring friend: {email}.
+Al registrarse, no olvide proporcionar la dirección de correo electrónico de su amigo referente: {email}.
 
-Best regards,
+Saludos.
 
 [{shop_name}]({shop_url})
 

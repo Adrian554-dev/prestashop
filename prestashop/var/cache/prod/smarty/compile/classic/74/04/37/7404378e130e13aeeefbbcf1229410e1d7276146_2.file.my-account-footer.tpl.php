@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.4, created on 2025-04-22 13:16:09
+/* Smarty version 4.3.4, created on 2025-05-20 13:11:39
   from '/app/themes/classic/modules/ps_emailalerts/views/templates/hook/my-account-footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_68077a795dc956_74835735',
+  'unifunc' => 'content_682c636b88add6_94757060',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7404378e130e13aeeefbbcf1229410e1d7276146' => 
     array (
       0 => '/app/themes/classic/modules/ps_emailalerts/views/templates/hook/my-account-footer.tpl',
-      1 => 1738229700,
+      1 => 1738226100,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68077a795dc956_74835735 (Smarty_Internal_Template $_smarty_tpl) {
+function content_682c636b88add6_94757060 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <li>
   <a href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array('entity'=>'module','name'=>'ps_emailalerts','controller'=>'account'),$_smarty_tpl ) );?>

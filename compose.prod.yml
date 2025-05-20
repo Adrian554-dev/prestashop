@@ -2,7 +2,7 @@ services:
   web:
     build: ./apache
     hostname: web
-    restart: allways
+    restart: always
     ports:
       - '8000:80'
       - '443:443'
@@ -10,5 +10,6 @@ services:
       - ./prestashop:/app
       - ./apache/prestashop.conf:/etc/apache2/sites-enabled/prestashop.conf
       - ./certs:/.certs
+      - ./logs:/logs
     env_file:
       - .env.prod

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.4, created on 2025-04-22 13:16:09
+/* Smarty version 4.3.4, created on 2025-05-20 13:11:21
   from 'module:ps_specialsviewstemplateshookps_specials.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_68077a79447e35_38522926',
+  'unifunc' => 'content_682c63599ee3a4_88381760',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '69eca6f7099f96303240f391e6c6743858b25719' => 
     array (
       0 => 'module:ps_specialsviewstemplateshookps_specials.tpl',
-      1 => 1738229700,
+      1 => 1738226100,
       2 => 'module',
     ),
   ),
@@ -21,8 +21,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/productlist.tpl' => 1,
   ),
 ),false)) {
-function content_68077a79447e35_38522926 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '31779718968077a79446a37_23128909';
+function content_682c63599ee3a4_88381760 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '1008025268682c63599ed1e6_43654780';
 ?>
 
 <section class="featured-products clearfix mt-3">

@@ -2,39 +2,39 @@
 
 {shop_url}
 
-Congratulations!
+¡Enhorabuena!
 
-A new order was placed on {shop_name} by the following customer: {firstname} {lastname} ({email})
+Un nuevo pedido ha sido efectuado en {shop_name} por el siguiente cliente: {firstname} {lastname} ({email})
 
-Order details
+Detalles del pedido
 
-Order: {order_name} Placed on {date}
+Pedido: {order_name} Realizado el {date}
 
-Payment: {payment}
+Pago: {payment}
 
-Reference	Product	Unit price	Quantity	Total price   {items}
-Products	{total_products}
-Discounts	{total_discounts}
-Gift-wrapping	{total_wrapping}
-Shipping	{total_shipping}
-Including total tax	{total_tax_paid}
-Total paid	{total_paid}
+Referencia	Producto	Precio unitario	Cantidad	Precio total   {items}
+Productos	{total_products}
+Descuentos	{total_discounts}
+Embalaje de regalo	{total_wrapping}
+Transporte	{total_shipping}
+Incluyendo impuestos totales	{total_tax_paid}
+Total pagado	{total_paid}
 
-Carrier
+Transportista
 
-Carrier: {carrier}
+Transportista: {carrier}
 
-Payment: {payment}
+Pago: {payment}
 
-Delivery address
+Dirección de entrega
 
 {delivery_block_html}
 
-Billing address
+Dirección de facturación
 
 {invoice_block_html}
 
-Customer message:
+Mensaje del cliente:
 
 {message}
 

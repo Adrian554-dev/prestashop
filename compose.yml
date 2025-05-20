@@ -11,33 +11,29 @@ services:
       - ./certs:/.certs
       - ./apache/entrypoint.sh:/entrypoint.sh
       - ./logs:/logs
+      - ./apache/php.ini:/etc/php/8.2/apache2/php.ini
     env_file:
-      - .env
-    # environment:
-    #   MYSQL_ROOT_PASSWORD: abc123.
-    #   MYSQL_DATABASE: db
-    #   MYSQL_USER: user
-    #   MYSQL_PASSWORD: userpw123.
+      - .env.dev
     networks:
       rede_test:
         aliases:
           - adrian.lan
           - www.adrian.lan
           - tech.a24adrianbr.tech
-    depends_on:
-      - db1
+    # depends_on:
+    #   - db1
 
-  db1:
-    image: mysql:latest
-    restart: always
-    env_file:
-      - .env.dev
-    volumes:
-      - db1:/var/lib/mysql
-      - ./backup:/backup
-      # - ./backup/wp.sql:/docker-entrypoint-initdb.d/wp.sql
-    networks:
-      rede_test:
+  # db1:
+  #   image: mysql:latest
+  #   restart: always
+  #   env_file:
+  #     - .env.dev
+  #   volumes:
+  #     - db1:/var/lib/mysql
+  #     - ./backup:/backup
+  #     # - ./backup/wp.sql:/docker-entrypoint-initdb.d/wp.sql
+  #   networks:
+  #     rede_test:
 
   cliente:
     hostname: cliente

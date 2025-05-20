@@ -224,8 +224,8 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../ezyang/htmlpurifier',
             'aliases' => array(
-                0 => 'v4.14.0',
-                1 => '9999999-dev',
+                0 => '9999999-dev',
+                1 => 'v4.14.0',
             ),
             'dev_requirement' => false,
         ),

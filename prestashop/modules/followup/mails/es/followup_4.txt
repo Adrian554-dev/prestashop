@@ -2,19 +2,19 @@
 
 {shop_url}
 
-Hi {firstname} {lastname},
+Hola {firstname} {lastname},
 
-Your cart on {shop_name}
+Su carrito de compra en {shop_name}
 
-Congratulations, you are one of our best customers! However, it looks like you have not placed an order since {days_threshold} days.
+Usted es uno de nuestros mejores clientes, sin embargo, no ha realizado ningún pedido desde hace {days_threshold} días.
 
 Your cart has been saved, you can resume your order by visiting our store: {shop_url}
 
-We are pleased to offer you a discount of {amount}% off your next order. And this offer is valid for {days} days, so do not wait any longer!
+Nos complace ofrecerle un descuento de un {amount}% en su próximo pedido. Esta oferta es solamente válida durante {days} días, ¡así que no espere más!
 
-Here is your VOUCHER CODE: {voucher_num}
+Aquí está su CÓDIGO DE CUPÓN DE DESCUENTO: {voucher_num}
 
-Enter this code in your shopping cart to get the discount.
+Introduzca este código en su carrito de compra para obtener el descuento.
 
 [{shop_name}]({shop_url})
 
