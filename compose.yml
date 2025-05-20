@@ -31,12 +31,7 @@ services:
     image: mysql:latest
     restart: always
     env_file:
-      - .env
-    # environment:
-    #   MYSQL_ROOT_PASSWORD: abc123.
-    #   MYSQL_DATABASE: db
-    #   MYSQL_USER: user
-    #   MYSQL_PASSWORD: userpw123.
+      - .env.dev
     volumes:
       - db1:/var/lib/mysql
       - ./backup:/backup

@@ -11,9 +11,4 @@ services:
       - ./apache/prestashop.conf:/etc/apache2/sites-enabled/prestashop.conf
       - ./certs:/.certs
     env_file:
-      - .env
-    # environment:
-    #   MYSQL_ROOT_PASSWORD: abc123.
-    #   MYSQL_DATABASE: db
-    #   MYSQL_USER: user
-    #   MYSQL_PASSWORD: userpw123.
+      - .env.prod
