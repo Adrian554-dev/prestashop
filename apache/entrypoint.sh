@@ -10,6 +10,8 @@ chmod a+w -R /app/var/logs
 chmod a+w -R /app/var/cache
 chmod a+w -R /app/cache
 
+chmod a+w -R /app/themes/classic/assets/cache/
+
 
 apachectl -D FOREGROUND
 #tail -f /dev/null
