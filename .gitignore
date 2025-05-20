@@ -4,3 +4,4 @@ prestashop/var/cache
 prestashop/var/logs
 .env.dev
 .env.prod
+prestashop/cache
