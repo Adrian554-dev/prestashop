@@ -1,0 +1,24 @@
+services:
+  web:
+    build: ./nginx
+    hostname: web
+    ports:
+      - '8000:80'
+      - '443:443'
+    volumes:
+      - ./prestashop:/app
+      - ./nginx/prestashop-nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./certs:/.certs
+      - ./nginx/entrypoint.sh:/entrypoint.sh
+      - ./logs:/logs
+      - ./nginx/php.ini:/etc/php/8.2/fpm/php.ini
+    env_file:
+      - .env.dev
+    networks:
+      rede_test:
+        aliases:
+          - adrian.lan
+          - www.adrian.lan
+          - tech.a24adrianbr.tech
+    depends_on:
+      - db1
