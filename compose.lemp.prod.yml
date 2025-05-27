@@ -23,9 +23,3 @@ services:
       - ./logs:/logs
     env_file:
       - .env.prod
-    networks:
-      rede_test:
-        aliases:
-          - adrian.lan
-          - www.adrian.lan
-          - tech.a24adrianbr.tech
