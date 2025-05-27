@@ -5,6 +5,7 @@ services:
     volumes:
       - ./nginx/prestashop-nginx.conf:/etc/nginx/conf.d/prestashop.conf
       - ./prestashop:/app
+      - ./certs:/.certs
       - ./logs:/logs
       # - ./nginx/php.ini:/etc/php/8.2/fpm/php.ini
 
