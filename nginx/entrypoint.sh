@@ -14,5 +14,8 @@ chmod a+w -R /app/cache
 chmod a+w -R /app/themes/classic/assets/cache/
 
 
-apachectl -D FOREGROUND
-#tail -f /dev/null
+
+
+
+php-fpm8.2 -F
+# tail -f /dev/null

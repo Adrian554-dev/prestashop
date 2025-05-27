@@ -21,6 +21,8 @@ RUN apt-get update && apt-get install -y \
 RUN a2enmod ssl rewrite
 RUN mkdir -p /app/var/logs
 RUN chmod a+w /app/var/logs
+RUN sed -i 's/^upload_max_filesize\s*=.*/upload_max_filesize = 21M/' /etc/php/8.2/apache2/php.ini
+RUN sed -i 's/^post_max_size\s*=.*/post_max_size = 81M/' /etc/php/8.2/apache2/php.ini
 
 EXPOSE 80 443
 

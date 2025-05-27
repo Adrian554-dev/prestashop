@@ -17,11 +17,15 @@ RUN apt-get update && apt-get install -y \
 
 
 
-RUN a2enmod ssl rewrite
+# RUN a2enmod ssl rewrite
 RUN mkdir -p /app/var/logs
 RUN chmod a+w /app/var/logs
+RUN sed -i 's/^upload_max_filesize\s*=.*/upload_max_filesize = 21M/' /etc/php/8.2/fpm/php.ini
+RUN sed -i 's/^post_max_size\s*=.*/post_max_size = 81M/' /etc/php/8.2/fpm/php.ini
 
-EXPOSE 80 443
+RUN sed -i 's/^listen\s*=.*/listen = 9000/' /etc/php/8.2/fpm/pool.d/www.conf
+
+EXPOSE 9000
 
 COPY ./entrypoint.sh /entrypoint.sh
 
