@@ -3,7 +3,7 @@ services:
     image: nginx:latest
     restart: always
     volumes:
-      - ./nginx/prestashop-nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/prestashop-nginx.conf:/etc/nginx/conf.d/prestashop.conf
       - ./prestashop:/app
       - ./logs:/logs
       # - ./nginx/php.ini:/etc/php/8.2/fpm/php.ini
