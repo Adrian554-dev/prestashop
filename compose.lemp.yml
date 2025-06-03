@@ -6,7 +6,8 @@ services:
       - ./prestashop:/app
       - ./certs:/.certs
       - ./logs:/logs
-
+    depends_on:
+      - web
     ports:
       - '8000:80'
       - '443:443'
@@ -24,8 +25,11 @@ services:
       - ./nginx/entrypoint.sh:/entrypoint.sh
       - ./logs:/logs
       # - ./nginx/php.ini:/etc/php/8.2/fpm/php.ini
-    env_file:
-      - .env.dev
+    environment:
+      DB_HOST: db1
+      MYSQL_USER: user
+      MYSQL_PASSWORD: userpw123.
+      MYSQL_DATABASE: db
     networks:
       rede_test:
     depends_on:

@@ -2,6 +2,7 @@
 
 
 rm -rf /app/var/cache/*
+rm -rf /app/cache/*
 mkdir -p /app/var/cache/
 mkdir -p /app/var/logs/
 mkdir -p /app/cache/

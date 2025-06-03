@@ -14,5 +14,5 @@ chmod a+w -R /app/cache
 chmod a+w -R /app/themes/classic/assets/cache/
 
 
-apachectl -D FOREGROUND
+apache2ctl -D FOREGROUND
 #tail -f /dev/null
